@@ -28,14 +28,12 @@ services:
     environment:
       - VIRTUAL_HOST=whoami.danilaisaichev.xyz
       - LETSENCRYPT_HOST=whoami.danilaisaichev.xyz
-      - LETSENCRYPT_EMAIL=danila.isaichev@mail.ru
 
   whoami2:
     image: jwilder/whoami
     environment:
       - VIRTUAL_HOST=whoami2.danilaisaichev.xyz
       - LETSENCRYPT_HOST=whoami2.danilaisaichev.xyz
-      - LETSENCRYPT_EMAIL=danila.isaichev@mail.ru
 
 volumes:
   conf:
